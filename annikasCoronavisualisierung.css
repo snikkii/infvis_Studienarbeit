@@ -1,0 +1,55 @@
+/*Body-Elemente gestalten*/
+
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1em;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    margin: 0;
+    background-color: rgb(110, 179, 196);
+}
+
+h1 {
+    font-size: 3em;
+}
+
+#whereItsFrom {
+    font-size: 0.6em;
+    text-align: right;
+    padding-right: 1%;
+}
+
+
+/*Gestaltung der Buttons*/
+
+.button {
+    border: 0.03em solid rgb(0, 0, 0);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1.2em;
+    color: rgb(0, 0, 0);
+    background-color: rgb(0, 118, 148);
+}
+
+
+/*"Specialeffect" beim Hovern über die Buttons*/
+
+input.button:hover {
+    background-color: rgba(0, 118, 148, 0.5);
+    cursor: pointer;
+}
+
+
+/*"Specialeffect" beim Hovern über die Kreise der Lollipops*/
+
+.u:hover {
+    cursor: pointer;
+    stroke: rgba(0, 0, 0, 0.7);
+}
+
+
+/*Gestalung des Feldes, in dem die Informationen der einzelnen Bundesländer stehen*/
+
+.tooltip {
+    background-color: rgb(168, 231, 247);
+    padding: 2%;
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<!--Zum Erstellen des Diagramms mit d3.js habe ich folgende Beispiele zur Hilfe genommen:
+https://www.d3-graph-gallery.com/bubble.html
+https://www.d3-graph-gallery.com/graph/lollipop_button_data_csv.html-->
+
+<head>
+    <meta charset="utf-8">
+    <!--Einfügen von Titel und Icon für die Tableiste-->
+    <title>Annikas Coronavisualisierung</title>
+    <link href="icon.png" rel="icon" type="image/x-icon">
+    <!--Einfügen der CSS-Datei, um die Website zu gestalten-->
+    <link href="annikasCoronavisualisierung.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <h1>Annikas Coronavisualisierung</h1>
+    <!--Einbinden der d3.js-Datei über den Link zur Website-->
+    <script src="https://d3js.org/d3.v4.js"></script>
+
+    <!--Buttons zum Ändern des Diagramms-->
+    <input type="button" class="button" value="Alle Fälle" onclick="update('Faelle')"></input>
+    <input type="button" class="button" value="Todesfälle" onclick="update('Todesfaelle')"></input>
+    <!--In dieses div kommt das Diagramm hinein-->
+    <div id="graph"></div>
+
+    <!--Hinweis, woher die Zahlen kommen und an welchem Tag die CSV-Datei heruntergeladen wurde-->
+    <p id="whereItsFrom">Die Zahlen wurden vom RKI übernommen. Letzte Aktualisierung: 19.07.2020</p>
+    <!--Einbinden der JavaScript-Datei, die die Visualisierung erstellt-->
+    <script src="annikasCoronavisualisierung.js" type="text/javascript"></script>
+</body>
+
+</html>
